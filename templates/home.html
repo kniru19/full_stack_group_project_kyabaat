@@ -1,0 +1,43 @@
+<!-- misra -->
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Brand -->
+
+<div class="brand">
+  <img src="../static/images/white_bg.svg" alt="kyabaat">
+</div>
+
+<!-- Carousel -->
+<div id="landingCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+    </div>
+
+    <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1750943082020-4969b2a63084?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080');">
+      
+    </div>
+
+    <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1665088127661-83aeff6104c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080');">
+      <div class="carousel-overlay"></div>
+      <div class="carousel-caption text-center">
+        <h1>Fresh Ingredients</h1>
+        <p class="fs-4 text-light">Quality You Can Taste</p>
+        <p class="text-light">Made with the finest local ingredients</p>
+        <button class="btn btn-warning btn-lg mt-3" onclick="registerNow()">Register</button>
+        <button class="btn btn-warning btn-lg mt-3" onclick="loginNow()">Login</button>
+      </div>
+    </div>
+
+
+ 
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="3"></button>
+  </div>
+</div>
+
+
+{% endblock content %}
