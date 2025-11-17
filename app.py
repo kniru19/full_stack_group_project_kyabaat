@@ -1,3 +1,5 @@
+
+
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for
 import pymongo
 from datetime import datetime
@@ -12,8 +14,7 @@ app.secret_key = 'fd8b3f7967e94c308fe15ba8490c1926c85d38e861c84c96'  # This is a
 
 # Database connection
 try:
-    client = pymongo.MongoClient("mongodb+srv://kyabaat:kyabaat@kyabaat.c56e53e.mongodb.net/")
-    # Test the connection
+    
     import certifi
 
     mongo_uri = "mongodb+srv://kyabaat:kyabaat@kyabaat.c56e53e.mongodb.net/"
